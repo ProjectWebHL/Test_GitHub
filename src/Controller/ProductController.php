@@ -11,9 +11,9 @@ class ProductController extends AbstractController
     #[Route('/product', name: 'app_product')]
     public function index(): Response
     {
-        $cars = $repo->findAll();
+        $cars = "fff";
             return $this->render('car/index.html.twig', [
-                'cars' => $cars
+                'controller_name' => $cars
             ]);
     }
 }
